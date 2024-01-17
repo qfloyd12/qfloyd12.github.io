@@ -11,6 +11,15 @@ body{
     border-radius: 5px;
 }
 
+#main-asgmt a{
+    color: pink;
+    text-decoration: none;
+    background-color: black;
+    color:green;
+    padding: 5px;
+    border-radius: 5px;
+}
+
 h1 {
     color: darkslategrey;
 }
