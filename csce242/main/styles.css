@@ -1,0 +1,14 @@
+head{
+
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+body{
+    background: #c1946a;
+    padding: 5px;
+    width: 80%;
+    /* coneter horinxonatally*/
+    margin: auto;
+    border-radius: 5px;
+}
