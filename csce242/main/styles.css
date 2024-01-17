@@ -1,25 +1,36 @@
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: brown;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #c4b7a6;
 }
 
-#assignments{
-    background: blue;
-    padding: 5px;
-    width: 80%;
+#content{
+    background: #b9936c;
+    width: 90%;
+    padding: 100px;
     margin: auto;
-    border-radius: 5px;
+    border-radius: 100px;
 }
 
 #main-asgmt a{
-    color: pink;
     text-decoration: none;
-    background-color: black;
-    color:green;
+    background-color:  #b9936c;
+    color:black;
     padding: 5px;
     border-radius: 5px;
 }
 
+#main-asgmt a:hover {
+    background: #dac292;
+}
+
 h1 {
-    color: darkslategrey;
+    color: #e6e2d3 ;
+}
+
+h2 {
+    color: #e6e2d3;
+}
+
+h3 {
+    color: #e6e2d3;
 }
