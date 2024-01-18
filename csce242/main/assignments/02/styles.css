@@ -1,19 +1,19 @@
 body{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #c4b7a6;
+    background: url(https://cdn-amz.woka.io/images/I/61e2oFbb97L.SS800.jpg)
 }
 
 #content{
     background: #b9936c;
-    width: 90%;
-    padding: 100px;
+    width: 50%;
+    padding: 90px;
     margin: auto;
     border-radius: 100px;
 }
 
 #main-nav a{
     text-decoration: none;
-    background-color:  #b9936c;
+    background-color:  #e6e2d3;
     color:black;
     padding: 5px;
     border-radius: 5px;
@@ -24,13 +24,30 @@ body{
 }
 
 h1 {
-    color: #e6e2d3 ;
+    color: #800000 ;
 }
 
 h2 {
-    color: #e6e2d3;
+    color: #800000;
 }
 
 h3 {
-    color: #e6e2d3;
+    color: #800000;
 }
+
+img{
+    margin: auto;
+    border: 5px solid black;
+    padding: 0px;
+    width:  700px;
+    height: 500px;
+}
+
+table, tr, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    background: white;
+    padding: 0px;
+    width: 750px;
+    height: 50px;
+  }
