@@ -14,7 +14,7 @@ body {
 
 .assignment {
     margin-bottom: 20px;
-    display: inline-block;
+    display: block; /* Change to block for better responsiveness */
 }
 
 img {
@@ -32,14 +32,11 @@ h1, h2 {
     color: #e6e2d3;
     text-align: center;
 }
-
 @media only screen and (min-width: 768px) {
     #content {
         display: flex;
-        flex-wrap: nowrap;
         justify-content: center;
         align-items: center;
-        
     }
 
     .assignment {
@@ -47,7 +44,7 @@ h1, h2 {
         flex: 0 0 auto;
         padding: 2px;
         text-align: center;
-        margin: auto;
+        margin: 10px; /* Adjusted for spacing between items */
         border: 1px solid black;
     }
 }
