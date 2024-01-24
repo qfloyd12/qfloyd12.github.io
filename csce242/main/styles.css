@@ -1,6 +1,7 @@
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #c4b7a6;
+    margin: 0;
 }
 
 #content {
@@ -14,14 +15,12 @@ body {
 
 .assignment {
     margin-bottom: 20px;
-    display: block; /* Change to block for better responsiveness */
 }
 
 img {
     max-width: 100%;
     height: auto;
-    display: block;
-    margin: auto;
+    margin: 10px 0; /* Adjusted for spacing */
 }
 
 .description {
@@ -32,19 +31,21 @@ h1, h2 {
     color: #e6e2d3;
     text-align: center;
 }
+
 @media only screen and (min-width: 768px) {
     #content {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: flex-start;
     }
 
     .assignment {
         background-color: burlywood;
-        flex: 0 0 auto;
-        padding: 2px;
+        flex: 0 0 30%; /* Adjusted for better responsiveness */
+        padding: 10px;
         text-align: center;
-        margin: 10px; /* Adjusted for spacing between items */
+        margin: 10px;
         border: 1px solid black;
     }
 }
