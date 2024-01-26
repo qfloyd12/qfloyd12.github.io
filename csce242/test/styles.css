@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9; /* Set your preferred background color */
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.column {
+    flex: .7;
+    background-color: #f2f2f2;
+    padding: 10px;
+    border: 1px solid #ddd;
+    
+}
+
+.column-container {
+    display: flex;
+    flex: 1; /* Adjust the value to distribute remaining space between columns */
+    flex-direction: column;
+    background-color: #f2f2f2;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+
+
+/* Additional styles for better visualization */
+p {
+    margin: 0;
+}
+
+.image-text-container {
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+    border-bottom: 1px solid black;
+}
+
+#main-nav a:hover {
+    background: #FF0000;
+}
+
+#main-nav a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    color: #73000A;
+}
+
+ul {
+    list-style: none;
+    color: black;
+}
+
+/* Add this CSS code at the end of your existing CSS styles */
+
+.second-row {
+    margin-right:100px; /* You can adjust the value as needed */
+}
+
+
+
+
