@@ -7,74 +7,121 @@ body {
 
 .CofEC {
     align-items: left;
+    max-height: 15px;
     display: flex;
     background-color: #73000A;
     flex-direction: column;
 }
 
 
-.top {
+.top{
     background: black;
     color: #FFFFFF;
     display: flex;
-    justify-content: space-between; /* Add this line */
-    align-items: center; /* Align items vertically in the center */
+    justify-content: space-between; 
+    align-items: center; 
 }
+
+@media only screen and (max-width: 768px) {
+    /* Adjustments for smaller screens */
+    .main {
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+    .column1, .column2 {
+        flex: 1;
+        min-width: 0;
+    }
+    .column2 p {
+        border-bottom: none;
+    }
+    .main2 {
+        flex-direction: column;
+    }
+    .column3 img {
+        margin-right: 10px;
+    }
+    .FCofEC {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .FCofEC nav li {
+        margin-right: 10px;
+    }
+    .bt {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
 
 
 .header-container {
     display: flex;
-    align-items: center; /* Align items vertically in the center */
+    align-items: center; 
 }
 
-.top ul {
-    list-style-type: none;
+.top a{
+    list-style: none;
     display: flex;
     text-align: right;
-    margin-right: 20px; /* Adjust as needed for spacing */
+    margin-right: 20px; 
+    color: white;
+    text-decoration: none;
 
 
+}
+
+.top a:hover {
+    background: #73000A;
 }
 
 .top img {
-    margin-right: 10px; /* Adjust the value to your preference */
+    margin-right: 10px; 
 }
 
 .CofEC h1 {
     color: #FFFFFF;
+    margin-top: -5px;
+    margin-right: 200px;
+    font-size: 25px;
 }
 
 .main {
     display: flex;
+    padding: 0%;
+    padding-top: 30px;
+    padding-right: 20%;
+    padding-left:18%;
     justify-content: center;
-    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+    flex-wrap: wrap; 
 }
 
 .main2 {
     display: flex;
     flex-shrink:1;
     justify-content: space-between;
-    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+    flex-wrap: wrap; 
 }
 
 .column1,
-.column2,
-.column3 {
+.column2 {
     padding: 0 10px;
-    max-width: 100%; /* Adjust for smaller screens */
+    max-width: 100%;
 }
 
 .column1 {
-    flex: 6; /* Adjust as needed; smaller value makes it smaller */
-    max-width: 300px; /* Set a maximum width for column1 */
+    flex: 6; 
+    min-width: 10%;
 }
 
 .column2 {
-    flex: 7; /* Adjust as needed; larger value makes it larger */
+    flex: 3; 
+    min-width: 70%;
 }
 
 .column2-container {
-    overflow: hidden; /* Prevent content in column2 from extending past the image */
+    overflow: hidden; 
 }
 
 .column2 p {
@@ -82,10 +129,11 @@ body {
 }
 
 .column3 {
-    padding: 10px;
+    flex: 1;  
     display: flex;
     flex-direction: column;
 }
+
 
 .image-text-container {
     display: flex;
@@ -95,7 +143,7 @@ body {
 }
 
 .column3 img {
-    margin-right: 0; /* Adjust for smaller screens */
+    margin-right: 0; 
 }
 
 .column3 h1 {
@@ -104,8 +152,10 @@ body {
 
 .column-container {
     flex: 7;
+    max-width: 30%;
     display: flex;
     flex-direction: column;
+    
 }
 
 .text-container {
@@ -136,30 +186,48 @@ ul {
 
 .column4{
     flex:4;
+    border: 1px solid black;
 }
 .column5 {
     flex:7;
     border: 1px solid black;
-    /* Adjust forr smaller screens */
+   
 }
+
+
 
 .FCofEC {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     background-color: #ECECEC;
-    padding: 0%;
+    padding: 1%;
 }
 
 .FCofEC h1 {
-    margin-left: 20px; /* Adjust for smaller screens */
+    margin: 0; 
 }
 
-.FCofEC ul {
-    list-style-type: none;
+.FCofEC nav ul {
+    list-style: none;
     display: flex;
-    margin-right: 20px; /* Adjust for smaller screens */
+    padding: 0;
+    margin: 0;
 }
+
+.FCofEC nav li {
+    margin-right: 15px; 
+}
+
+.FCofEC a {
+    text-decoration: none;
+    color: black;
+}
+
+.FCofEC a:hover {
+    background-color: #CC3042;
+}
+
 
 
 .top ul{
@@ -170,7 +238,7 @@ ul {
 
 
 #main-nav a:hover {
-    background: #73000A;
+    background: #CC3042;
 }
 
 #main-nav a {
@@ -186,15 +254,71 @@ ul {
 }
 
 
-/* Media Queries for Responsive Design */
+.bt{
+    background: #73000A;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
 
-@media only screen and (max-width: 768px) {
-    .CofEC h1,
-    .FCofEC h1 {
-        margin-left: 20px; /* Adjust as needed for smaller screens */
-    }
+.bt img {
+    margin-right: 10px; 
+}
 
-    .FCofEC ul {
-        margin-right: 20px; /* Adjust as needed for smaller screens */
-    }
+
+
+.bottom-container {
+    display: flex;
+    align-items: center; 
+}
+
+.last{
+    background-color: black;
+}
+
+.last ul {
+    text-decoration: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between; 
+}
+
+
+.last a{
+    text-decoration: none;
+    background-color: black;
+    color: #FFFFFF;
+}
+
+.table-container {
+    display: flex;
+    background: #73000A;
+    color: #FFFFFF;
+}
+
+.table-container a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.table-container a:hover{
+    color: #CC3042;
+}
+
+
+table {
+    border-top: 1px solid white;
+    margin-right: 10px;
+
+}
+th, td {
+    padding: 0px;
+    text-align: left;
+
+}
+th {
+    background-color: #73000A;
 }
