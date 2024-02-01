@@ -1,0 +1,131 @@
+:root {
+    --background-color: #ffffff; 
+    --content-bg-color: #c9d2e1; 
+    --text-color: #424242; 
+    --link-color: #ff6f61; 
+    --box-bg-color: #cfcfcf; 
+    --box-shadow-color: rgba(0, 0, 0, 0.15); 
+    --box-shadow-hover-color: rgba(0, 0, 0, 0.25); 
+    --border-color: #000000; 
+}
+
+
+[data-theme="dark"] {
+    --background-color: #000000; 
+    --content-bg-color: #232b43; 
+    --text-color: #f4f4f4;
+    --link-color: #1a88cc;
+    --box-bg-color: #747474;
+    --box-shadow-color: rgba(255, 255, 255, 0.1);
+    --box-shadow-hover-color: rgba(255, 255, 255, 0.3);
+    --border-color: #f4f4f4;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0%;
+}
+
+#content {
+    background: var(--content-bg-color);
+    padding: 5%;
+    margin: auto;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#third-column {
+    background-color: #5D878C;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+}
+
+#third-column img {
+    margin-top:0px; 
+}
+
+
+#slider {
+    width: 200px;
+    margin: auto;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+
+
+
+.column {
+    
+    flex: 1; 
+    min-width: 250px; 
+    background-color: var(--box-bg-color);
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px 0px var(--box-shadow-color);
+    padding: 15px;
+    margin: 10px;
+    border: 1px solid black;
+    transition: box-shadow 0.3s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.column:hover {
+    box-shadow: 0px 8px 12px 0px var(--box-shadow-hover-color);
+}
+
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+
+h1, h2, h3{
+    color: var(--text-color);
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+
+    img {
+        width: 200px;
+        height: 200px;
+        margin: auto;
+    }
+    
+    
+    
+    .column {
+        
+        flex: 1; 
+        min-width: 250px; 
+        background-color: var(--box-bg-color);
+        border-radius: 10px;
+        box-shadow: 0px 4px 6px 0px var(--box-shadow-color);
+        padding: 15px;
+        margin: 10px;
+        border: 1px solid black;
+        transition: box-shadow 0.3s ease-in-out;
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #third-column img {
+        margin-top:0px; 
+    }
+    
+    
+}

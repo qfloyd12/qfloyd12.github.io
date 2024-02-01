@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <title>Assignment 7</title>
+        <link rel="stylesheet" href="styles.css">
+
+    </head>
+
+    <body>
+
+        <h1>Assignment</h1>
+        <h2>Introduction to JavaScript</h2>
+
+        <div id="content">
+
+            <section class="column">
+
+                <header>
+                    <h1>Chage Image</a></h1>
+                </header>
+            
+                <img id="img1" src="images/200x200.gif" onclick="changeImage('img1')">
+        
+    
+                <div class="description">
+                    <p>Maecenas a sapien molestie, feugiat est ut, imperdiet ipsum. Aliquam imperdiet, massa ac eleifend hendrerit, tellus purus hendrerit risus, quis elementum lectus purus nec ipsum. Nullam volutpat pellentesque dolor, vitae imperdiet ex tristique quis. Fusce ac enim a turpis elementum posuere. Maecenas ac ante et lacus pharetra auctor quis in diam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis fermentum gravida lorem ac cursus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse non dolor nulla. Quisque euismod viverra dolor non cursus. Etiam volutpat feugiat ultricies. Nulla sed ultrices est, sit amet ultricies mi. Praesent ornare ultrices neque, eu lobortis nisl ultricies ac. Aliquam at varius mauris. Aliquam massa nulla, sollicitudin at congue et, maximus vitae risus.</p>
+                </div>
+
+            </section>
+
+            <section class="column">
+
+                <header>
+                    <h1>Slider Rotate</h1>
+                </header>
+    
+                <img id="img2" src="images/200x200.gif" onclick="SliderImage('img2')">
+
+    
+                <div class="description">
+                    <p>Maecenas a sapien molestie, feugiat est ut, imperdiet ipsum. Aliquam imperdiet, massa ac eleifend hendrerit, tellus purus hendrerit risus, quis elementum lectus purus nec ipsum. Nullam volutpat pellentesque dolor, vitae imperdiet ex tristique quis. Fusce ac enim a turpis elementum posuere. Maecenas ac ante et lacus pharetra auctor quis in diam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis fermentum gravida lorem ac cursus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse non dolor nulla. Quisque euismod viverra dolor non cursus. Etiam volutpat feugiat ultricies. Nulla sed ultrices est, sit amet ultricies mi. Praesent ornare ultrices neque, eu lobortis nisl ultricies ac. Aliquam at varius mauris. Aliquam massa nulla, sollicitudin at congue et, maximus vitae risus.</p>
+                </div>
+
+                <input type="range" id="slider" min="0" max="360" value="0" oninput="rotateImage(this.value)">
+
+            </section>
+
+            <section class="column" id="third-column" onclick="showImage('third-column')">
+
+                <header>
+                    <h2>Star</h2>
+                </header>
+
+            </section>
+
+        </div>
+
+    </body>
+
+    <footer>
+
+        <h3>@floydquintarius</h>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+
+</html>
