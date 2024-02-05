@@ -93,6 +93,40 @@ nav a:hover {
     flex: 2;
 }
 
+@media only screen and (max-width: 768px) {
+    .wrapper {
+        width: 100%;
+    }
+
+    .logo {
+        width: 100%;
+        float: none;
+        text-align: center;
+        line-height: inherit;
+    }
+
+    nav {
+        float: none;
+        line-height: inherit;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .image-and-text {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-column img {
+        width: 100%;
+        height: auto;
+    }
+
+    .text-column {
+        padding-left: 0;
+    }
+}
+
 
 
 

@@ -147,3 +147,60 @@ h1{
     padding-top: 100px;
 }
 
+@media screen and (max-width: 768px) {
+    .wrapper {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .logo {
+        width: 100%;
+        float: none;
+        text-align: center;
+        line-height: inherit;
+    }
+
+    nav {
+        float: none;
+        line-height: inherit;
+        margin-left: 0;
+    }
+
+    .banner-area {
+        height: 40vh;
+        margin-top: 70px;
+    }
+
+    .banner-area h2 {
+        font-size: 40px;
+        padding-top: 15%;
+    }
+
+    .content-area {
+        padding-top: 100px;
+    }
+
+    .content-area h2 {
+        font-size: 30px;
+        padding-top: 5%;
+    }
+
+    .content-area p {
+        padding: 5% 0;
+        line-height: 30px;
+    }
+
+    .image-row img {
+        width: 50%;
+        margin: 5px;
+    }
+
+    .sneaker {
+        width: 80%;
+    }
+
+    h1 {
+        padding-top: 100px;
+    }
+    
+}
