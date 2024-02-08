@@ -3,24 +3,25 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 body {
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
     overflow-x: hidden;
+    background-color: #F3EFE0;
 }
 
 .wrapper {
     width: 90%;
     margin: 0 auto;
-    margin-bottom: 100px; 
 }
 
 header {
     width: 100%;
     height: 100px;
-    background: gray;
+    background: #9A3334;
     position: fixed;
     top: 0;
     left: 0;
@@ -37,8 +38,8 @@ header {
 .logo a {
     text-decoration: none;
     font-size: 30px;
-    font-family: 'Courier New', Courier, monospace;
-    color: black;
+    font-family: fantasy;
+    color: white;
     letter-spacing: 4px;
 }
 
@@ -46,13 +47,6 @@ nav {
     float: left;
     line-height: 100px;
     margin-left: 3%;
-}
-
-.img{
-    padding-top: 10px;
-    width: 17%;
-    margin-right: 2.5%; 
-
 }
 
 nav a {
@@ -72,7 +66,7 @@ nav a:hover {
 }
 
 .banner-area {
-    background-image: url('images/720x150.gif');
+    background-image: url('images/sn3.avif');
     background-size: cover;
     background-position: center center;
     height: 40vh;
@@ -88,20 +82,21 @@ nav a:hover {
     display: block;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.7);
+    background-color: #F3EFE0;
     z-index: -1;
 }
 
 .banner-area h2 {
     padding-top: 8%;
     font-size: 80px;
-    color: white;
+    background-color: #F3EFE0;
+
 }
 
 .content-area {
     width: 100%;
     padding-top: 0px;
-    background: white;
+    background-color: #F3EFE0;
 }
 
 .content-area h2 {
@@ -112,12 +107,6 @@ nav a:hover {
     letter-spacing: 4px;
 }
 
-.content-area p {
-    padding: 2% 0;
-    line-height: 35px;
-    text-align: justify;
-}
-
 .image-column {
     display: flex;
     flex-direction: column;
@@ -126,13 +115,18 @@ nav a:hover {
 .image-row {
     display: flex;
     flex-direction: row;
+    
 }
 
 .image-row img {
     padding-top: 10px;
-    width: 13%;
+    width: 17%;
     margin-right: 2.5%; 
-    padding-bottom: 30px;
+     background-color: #F3EFE0;
+}
+
+.box-area{
+    background-color: #F3EFE0;
 }
 
 
