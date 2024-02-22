@@ -1,0 +1,63 @@
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #F1F2E9;
+    color: var(--text-color);
+
+}
+
+h1{
+    text-align: center;
+    color: #5D878C;
+}
+
+h2{
+    text-align: center;
+    color: #DA91A0;
+}
+
+#banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    border: 2px solid #B1C9C0; 
+    padding: 50px;
+    background: #F2F0D5;
+    color: #5D878C;
+}
+
+ 
+#slideshow {
+    text-align: center; 
+    border: 2px solid #B1C9C0 ; 
+    background: #F2F0D5;
+    color: #5D878C;
+    padding-top: 10px;
+}
+
+#slideshow img {
+    display: inline-block; 
+    margin: 0 auto; 
+    border: 2px solid #B1C9C0 ; 
+}
+
+@media only screen and (max-width: 768px) {
+    #banner {
+        padding: 30px; 
+    }
+    #slideshow {
+        padding-top: 5px; 
+    }
+
+    img {
+        object-fit: contain;
+        width: 75%;
+    }
+
+    #slideshow {
+        text-align: center ; 
+
+    }
+}
+
