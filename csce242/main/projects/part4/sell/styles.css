@@ -10,6 +10,18 @@ body {
     background-color: #F3EFE0;
     
 }
+
+ol {
+    text-align: left;
+  }
+  
+  ol li::marker {
+    font-weight: bold;
+  }
+  
+  
+  
+  
  
 body p{
     
