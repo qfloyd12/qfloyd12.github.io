@@ -139,6 +139,14 @@ nav a:hover {
 
 
 @media only screen and (max-width: 768px) {
+
+    ol {
+        text-align: left;
+      }
+      
+    ol li::marker {
+        font-weight: bold;
+      }
     .wrapper {
         width: 100%;
     }
@@ -198,6 +206,32 @@ nav a:hover {
     .nav-links a:last-child {
                 border-bottom: none; 
 }
+
+.custom-list {
+    list-style: none;
+    padding-left: 0;
+    text-align: left;
+    counter-reset: item; 
+  }
+  
+  .custom-list li {
+    position: relative;
+    padding-left: 22px; 
+  }
+  
+  .custom-list li::before {
+    content: counter(item) ".";
+    counter-increment: item; 
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+  }
+  
+  .custom-list li span {
+    display: block;
+  }
+  
+  
 }
 
 
