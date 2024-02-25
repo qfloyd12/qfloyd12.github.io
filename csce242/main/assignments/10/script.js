@@ -3,7 +3,7 @@ const advertisements = [
     "Each image has been editted by our superior Staff",
     "Our image collection showcases unparalleled diversity",
     "Meticulous attention to detail is evident in every edit",
-    "Our curated selection guarantees visual excellence"
+    "Our curated selection guarantees visual excellencehat gpt"
 ];
 
 let currentAdIndex = 0;
