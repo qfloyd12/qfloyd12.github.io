@@ -1,0 +1,53 @@
+{
+    "imageColumns": [
+      {
+        "images": [
+          {
+            "src": "images/shoe1.avif",
+            "alt": "Shoe 1"
+          },
+          {
+            "src": "images/shoe2.avif",
+            "alt": "Shoe 2"
+          },
+          {
+            "src": "images/shoe3.avif",
+            "alt": "Shoe 3"
+          }
+        ]
+      },
+      {
+        "images": [
+          {
+            "src": "images/shoe3 copy 2.avif",
+            "alt": "Shoe 4"
+          },
+          {
+            "src": "images/shoe8.avif",
+            "alt": "Shoe 5"
+          },
+          {
+            "src": "images/shoe8.avif",
+            "alt": "Shoe 6"
+          }
+        ]
+      },
+      {
+        "images": [
+          {
+            "src": "images/shoe3 copy 2.avif",
+            "alt": "Shoe 4"
+          },
+          {
+            "src": "images/shoe8.avif",
+            "alt": "Shoe 5"
+          },
+          {
+            "src": "images/shoe8.avif",
+            "alt": "Shoe 6"
+          }
+        ]
+      }
+    ]
+  }
+  

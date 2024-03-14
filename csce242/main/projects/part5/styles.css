@@ -115,7 +115,9 @@ nav a:hover {
 
 .image-column {
     display: flex;
-    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .image-row {
@@ -137,14 +139,16 @@ nav a:hover {
 }
 
 .image-container {
+    width: calc(25% - 20px);
+    margin-bottom: 20px;
     position: relative;
     overflow: hidden;
 }
 
 .image-container img {
-    width: 270px;
-    height: 270px;
-    object-fit: cover; 
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
     transition: transform 0.5s ease-in-out;
 }
 
@@ -186,22 +190,6 @@ nav a:hover {
     display: flex;
 }
 
-.shoe-description {
-    margin-top: 5px;
-    font-size: 14px;
-    color: #555;
-}
-
-.shoe-price {
-    margin-top: 5px;
-    font-size: 16px;
-    color: #000;
-    font-weight: bold;
-}
-
-
-
-
 @media (max-width: 768px) {
     .wrapper {
         width: 100%;
@@ -223,18 +211,18 @@ nav a:hover {
         font-size: 30px;
     }
 
-    .image-row {
-        display: block; 
+    .image-column {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
-    .image-row img {
-        width: 50%; 
-        margin: auto;
-        padding-bottom: 30px;
-        display: block;
+    .image-container {
+        width: 90%;
+        margin-bottom: 20px;
     }
 
-    .content-area{
+    .content-area {
         display: block;
     }
 
@@ -249,30 +237,21 @@ nav a:hover {
         text-align: center;
     }
 
-
-    .nav-links nav a:hover {
-        background-color: #ddd;
-        color: black;
+    .nav-links.active {
+        display: flex;
+        background-color: #ffffff;
+        top: 100px;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        padding: 5px 0;
+        margin: auto;
     }
 
-
-.nav-links.active {
-    display: flex; 
-    background-color: #ffffff;
-    top: 100px; 
-    width: 100%; 
-    flex-direction: column; 
-    text-align: center; 
-    padding: 5px 0; 
-    margin: auto;
+    .nav-links a:last-child {
+        border-bottom: none;
+    }
 }
-
-
-.nav-links a:last-child {
-    border-bottom: none; 
-}
-}
-
 
 
 

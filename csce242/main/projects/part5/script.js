@@ -6,32 +6,25 @@ document.addEventListener('DOMContentLoaded', function() {
         navLinks.classList.toggle('active');
     });
 
-    fetch('./ShoesData.json')
-        .then(response => {
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
-            }
-            return response.json();
-        })
+    fetch('data.json')
+        .then(response => response.json())
         .then(data => {
-            console.log('Data received:', data); // Confirm data is loaded
-            const shoesContainer = document.getElementById('shoes-container');
-            if (!shoesContainer) {
-                console.error('shoes-container element not found');
-                return;
-            }
-            data.shoes.forEach(shoe => {
-                console.log('Adding shoe:', shoe.name); // Confirm each shoe is processed
-                const shoeElement = document.createElement('div');
-                shoeElement.className = 'image-container';
-                shoeElement.innerHTML = `
-                    <img src="${shoe.image}" alt="${shoe.name}">
-                    <div class="hover-text">${shoe.name}</div>
-                `;
-                shoesContainer.appendChild(shoeElement);
+            const newArrivalsContainer = document.getElementById('newArrivalsContainer');
+            data.newArrivals.forEach(item => {
+                const imageContainer = document.createElement('div');
+                imageContainer.classList.add('image-container');
+
+                const img = document.createElement('img');
+                img.setAttribute('src', `images/${item.imageName}`);
+                
+                const hoverText = document.createElement('div');
+                hoverText.classList.add('hover-text');
+                hoverText.textContent = item.hoverText;
+
+                imageContainer.appendChild(img);
+                imageContainer.appendChild(hoverText);
+
+                newArrivalsContainer.appendChild(imageContainer);
             });
-        })
-        .catch(error => {
-            console.error('Error loading shoes data:', error);
         });
 });
